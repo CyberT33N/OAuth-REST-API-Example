@@ -18,6 +18,6 @@ const controller = {
    deletePizza: async function(json) { return await mongodb.deletePizza(json); },
    updatePizza: async function(json) { return await mongodb.updatePizza(json); }
 
-}; // let controllers = {
+};
 
 module.exports = controller;
