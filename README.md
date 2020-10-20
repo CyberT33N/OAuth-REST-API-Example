@@ -81,8 +81,7 @@ const res = await axios.post(  window.location.origin + '/secure', { client_id: 
 
 ## Sample POST request
 ```bash
-curl --location --request PUT 'http://localhost:1337/pizza?id=12345678&title=bbbb2&client_id=a&client_secret=b' \
+curl --location --request PUT 'http://localhost:1337/pizza?id=12345678&title=peperoni&client_id=a&client_secret=b' \
 --header 'Authorization: 50745173361995655525573263226081540815903524556943' \
 --data-raw ''
-```
 ```
