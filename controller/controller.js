@@ -20,6 +20,6 @@ const controller = {
    updatePizza: async function(req, res) { return await endpoints.updatePizza(req, res); }
 
 
-}; // const controller = {
+};
 
 module.exports = controller;
