@@ -57,7 +57,7 @@ First you must create your Database and define the name at the file **./admin/co
 ```
 
 <br />**IMPORTANT** - Please notice that those Client ID and Client Secret values from above are currently hardcoded inside of the file:
-<br /> - ./website/js/auth.js
+<br />./website/js/auth.js
 ```javascript
 const res = await axios.post(  window.location.origin + '/secure', { client_id: 'a', client_secret: 'b'  }, {
       headers: { authorization: accessToken.data['access_token'] }
