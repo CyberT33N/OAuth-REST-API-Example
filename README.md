@@ -46,7 +46,7 @@ _______________________________________
 # How to use?
 
 ## Create Access Token
-First you must create your Database and define the name at **./admin/config.json** at **"MongoDB_DB_NAME":"oauth-restapi-example"**.
+First you must create your Database and define the name at the file **./admin/config.json** at element **"MongoDB_DB_NAME":"oauth-restapi-example"**.
 
 <br /><br />Next you must create a Collection called **access** and insert your Client ID and Client Secret as example:
 ```javascript
