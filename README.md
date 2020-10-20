@@ -63,7 +63,7 @@ const res = await axios.post(  window.location.origin + '/secure', { client_id: 
       headers: { authorization: accessToken.data['access_token'] }
 }); 
 ```
-<br /> This POST request was only created for sample reason to verify that the OAuth process was working after we created the Access Token. If you use this for production you should remove this POST request.
+<br /> This POST request was only created for sample reasons to verify that the OAuth process was working after we created the Access Token. If you use this for production you should remove this POST request.
 
 <br /> <br /> Next you visit the Client APP, insert your Client ID and Client Secret and then press Submit:
 - http://localhost:1337
