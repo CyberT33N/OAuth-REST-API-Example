@@ -29,8 +29,8 @@ The second area contains some sample Endpoints for POST, DELETE & PUT requests w
 - LIMIT requests
 - OAuth 2.0
 - Check if Client ID, Client Secret, Access Token or POST data already exist in database to avoid duplicated data.
-- Prevent cross-site request forgery attacks by using CSRF token.
-- Secure express app by using Helmet (https://www.npmjs.com/package/helmet)
+- Prevent CSRF attacks (cross-site request forgery attacks) by using CSRF token (https://www.npmjs.com/package/csurf).
+- Secure express app by using Helmet (https://www.npmjs.com/package/helmet).
 
 
 
