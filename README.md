@@ -14,8 +14,8 @@ Database: **MongoDB**
 
 
 This sample REST API includes 2 areas. The first area is the OAuth process which includes:
-1. An OAuth dialog (HTML window) that asks the user to authorize the client app by enter Client ID & Client Secret.
-2. A route that generates an auth code and redirects to the client app.
+1. An OAuth dialog (HTML window) that asks the user to authorize the Client APP by entering Client ID & Client Secret.
+2. A route that generates an auth code and redirects to the Client APP.
 3. A route to exchange an auth code for an Access Token.
 4. A "secure" example endpoint that only responds if it is given a valid access token via the Authorization HTTP header, Client ID & Client Secret. This endpoint will be automatically called after the Access Token was generated to test that everything is working.
 
@@ -68,7 +68,7 @@ const res = await axios.post(  window.location.origin + '/secure', { client_id: 
 <br /> <br /> Next you visit the Client APP, insert your Client ID and Client Secret and then press Submit:
 - http://localhost:1337
 
-<br /> <br /> That´s it! When everything was successfully your generated Access Token should be display in the Client APP and should be stored in your Access Collection. You can test if everything is working by using the example POST, DELETE, PUT request endpoints. Please check below..
+<br /> <br /> That´s it! When everything was successfully your generated Access Token should be displayed in the Client APP and should be stored in your Access Collection. You can test if everything is working by using the example POST, DELETE, PUT request endpoints. Please check below..
 
 
 
