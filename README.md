@@ -68,7 +68,7 @@ const res = await axios.post(  window.location.origin + '/secure', { client_id: 
 <br /> <br /> Next you visit the Client APP, insert your Client ID and Client Secret and then press Submit:
 - http://localhost:1337
 
-<br /> <br /> That´s it! When everything was successfully your generated Access Token should be display in the Client APP and should be stored in your Access Collection. You can test if everything is working by use the example POST, DELETE, PUT request endpoints. Please check below..
+<br /> <br /> That´s it! When everything was successfully your generated Access Token should be display in the Client APP and should be stored in your Access Collection. You can test if everything is working by using the example POST, DELETE, PUT request endpoints. Please check below..
 
 
 
