@@ -252,7 +252,7 @@ log( 'zzz2: ' + Object.entries(req?.query).length );
        res.status(403).json({ message: 'Unauthorized' });
        return;
      }
-     else return true;
+     else return req?.headers?.authorization;
 
 
 

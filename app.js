@@ -236,7 +236,13 @@ app.post('/token', cors(), (req, res) => {(async () => {  await controller.addAc
 app.options('/secure', cors(), (req, res) => res.end());
 
 // Endpoint secured by auth token -- This is just a sample endpoint for testing if the OAuth process was done successfully
-app.post('/secure', cors(), (req, res) => {(async () => {  if( await controller.verifyOAuth(req, res) ) res.status(200).json({ answer: true });  })().catch((e) => {  log('ASYNC - POST - Error at secure Route.. Error: ' + e)  })});
+app.post('/secure', cors(), (req, res) => {(async () => {
+
+   const accessToken = await controller.verifyOAuth(req, res);
+   log( 'accessToken: ' + accessToken );
+   if( accessToken ) res.status(200).json({ accessToken: accessToken });
+
+})().catch((e) => {  log('ASYNC - POST - Error at secure Route.. Error: ' + e)  })});
 
 
 

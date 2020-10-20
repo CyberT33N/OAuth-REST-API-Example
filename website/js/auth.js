@@ -23,7 +23,7 @@
 
 
 
-          document.querySelector('#content').innerHTML = `Auth result: ${res.data.answer}`;
+          document.querySelector('#content').innerHTML = `Access Token: ${res.data.accessToken}`;
 
 
       }); // oauthOpen( window.location.origin + '/oauth-dialog.html', async (err, code) => {
