@@ -66,7 +66,7 @@ const res = await axios.post(  window.location.origin + '/secure', { client_id: 
 <br /> This POST request was only created for sample reason to verify that the OAuth process was working after we created the Access Token. If you use this for production you should remove this POST request.
 
 <br /> <br /> Next you visit the Client APP, insert your Client ID and Client Secret and then press Submit:
-- http://localhost:1337/
+- http://localhost:1337
 
 <br /> <br /> That´s it! When everything was successfully your generated Access Token should be display in the Client APP and should be stored in your Access Collection. You can test if everything is working by use the example POST, DELETE, PUT request endpoints. Please check below..
 
